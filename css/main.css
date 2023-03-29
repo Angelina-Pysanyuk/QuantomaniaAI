@@ -150,7 +150,7 @@ div.error {
 }
 .hero {
   position: relative;
-  background-image: url("/../../images/hero-background.jpeg");
+  background-image: url("./../../images/hero-background.jpeg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -346,7 +346,7 @@ div.error {
 }
 @media screen and (min-width: 1230px) {
   .hero {
-    background-image: url("/../../images/hero-background-desktop.jpeg");
+    background-image: url("./../../images/hero-background-desktop.jpeg");
   }
   .hero__container {
     position: relative;

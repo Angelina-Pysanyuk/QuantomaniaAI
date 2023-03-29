@@ -1,0 +1,13 @@
+.solutions-section {
+  display: none;
+  padding-bottom: 73px;
+  &.active {
+    display: block;
+  }
+}
+
+.solutions__info {
+  text-align: center;
+
+  color: var(--black);
+}

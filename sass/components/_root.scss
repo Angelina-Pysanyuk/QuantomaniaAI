@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Orchidea Pro Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Orchidea Pro Medium Italic"),
+    url("../fonts/Orchidea.woff") format("woff");
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+
+  color: var(--main-text-color);
+  background-color: var(--whitish-background);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px 10px;
+
+  border-radius: 10px;
+
+  white-space: nowrap;
+  font-size: 14px;
+
+  transition: all 0.3s;
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid var(--accent-orange-color);
+    color: var(--accent-orange-color);
+
+    &:hover {
+      background-color: var(--accent-orange-color);
+      color: var(--secondary-text-color);
+    }
+  }
+
+  &--fill {
+    width: 100%;
+    padding: 18px 0;
+
+    border: none;
+    outline: none;
+    background-color: var(--accent-orange-color);
+    border: 1px solid transparent;
+
+    color: var(--secondary-text-color);
+    font-size: 18px;
+
+    &:hover,
+    &:focus {
+      border-color: var(--accent-orange-color);
+      background-color: transparent;
+      color: var(--accent-orange-color);
+    }
+  }
+}
+
+::placeholder {
+  color: var(--white);
+  font-weight: 300;
+  opacity: 1; /* Firefox */
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 19px;
+}
+
+.section__title {
+  margin-bottom: 30px;
+
+  font-family: "Orchidea Pro";
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--secondary-text-color);
+}
+
+div.error {
+  position: absolute;
+  left: 0;
+  bottom: -35%;
+  color: var(--accent-orange-color);
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    max-width: 750px;
+  }
+  .button {
+    padding: 13px 37px 14px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .container {
+    max-width: 1230px;
+  }
+}

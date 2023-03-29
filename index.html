@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/wallet.svg" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>QuantomaniaAI</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <!-- hero -->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="header">
+            <div class="header__logo">
+              <picture>
+                <source srcset="images/logo.png 1x, images/logo@2x.png 2x" />
+                <img src="images/logo.png" alt="Logo" />
+              </picture>
+            </div>
+            <p class="header__text">
+              OFFERTA RISERVATA AI<br />
+              TRADER Ukraine
+            </p>
+            <div class="header__button">
+              <button type="button" class="button button--outline">
+                Crea un account
+              </button>
+            </div>
+          </div>
+          <div class="hero__wrappMain">
+            <div class="hero__block hero__block--left">
+              <h1 class="main-title">
+                L'investimento intelligente<br />
+                che ti farà guadagnare<br />
+                €9.288 in 5 ore<br />
+                <span class="main-title--accent">ed eliminare la povertà</span>
+              </h1>
+              <h2 class="main-title__description">
+                Con il nostro investimento intelligente potrai<br />
+                guadagnare migliaia di euro in meno di 7 giorni<br />
+                ed eliminare la povertà ottenendo profitti!
+              </h2>
+            </div>
+
+            <div class="hero__block hero__block--right">
+              <div class="video-button">
+                <a href="#" title="Open video modal" class="video-button__link">
+                  <svg class="play__icon" width="19" height="17">
+                    <use href="./images/sprite.svg#play-icon"></use>
+                  </svg>
+                </a>
+                <p class="video-button__text">Video</p>
+              </div>
+              <form class="form" id="registration">
+                <p class="form__title">Registrazione</p>
+                <div class="form__wrapp">
+                  <div class="form__input">
+                    <input type="text" name="firstName" placeholder="Nome" />
+                  </div>
+
+                  <div class="form__input">
+                    <input type="text" name="lastName" placeholder="Cognome" />
+                  </div>
+
+                  <div class="form__input">
+                    <input type="email" name="email" placeholder="E-mail" />
+                  </div>
+
+                  <div class="form__input form__input--phone">
+                    <div>
+                      <input
+                        id="phone"
+                        type="tel"
+                        name="phone"
+                        class=""
+                        placeholder=" "
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button type="submit" class="button button--fill">
+                  Registrati
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- info -->
+          <div class="info">
+            <img src="./images/info-icon.png" class="info__icon" alt="info" />
+            <p class="info__text">
+              Adesso il computer di quantum computing numero uno al mondo
+            </p>
+            <button type="button" class="info__button">È LIVE!</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- members -->
+      <section class="members">
+        <!-- <div class="container"> -->
+        <ul class="members__list">
+          <li class="member">
+            <img
+              src="images/first-member.png"
+              class="member__avatar"
+              alt="Avatar"
+            />
+            <div class="member-description">
+              <p class="">Harold Barnes ha ottenuto</p>
+              <p>€235</p>
+              <p class="member-description--accent">Saldo attuale: €132</p>
+            </div>
+          </li>
+
+          <li class="member">
+            <img
+              src="images/second-member.png"
+              class="member__avatar"
+              alt="Avatar"
+            />
+            <div class="member-description">
+              <p class="">Harold Barnes ha ottenuto</p>
+              <p>€235</p>
+              <p class="member-description--accent">Saldo attuale: €132</p>
+            </div>
+          </li>
+
+          <li class="member">
+            <img
+              src="images/third-member.png"
+              class="member__avatar"
+              alt="Avatar"
+            />
+            <div class="member-description">
+              <p class="">Harold Barnes ha ottenuto</p>
+              <p>€235</p>
+              <p class="member-description--accent">Saldo attuale: €132</p>
+            </div>
+          </li>
+        </ul>
+        <!-- </div> -->
+      </section>
+
+      <!-- problems -->
+      <section class="problem-section">
+        <div class="container">
+          <div class="problem__cards-wrapper">
+            <h3 class="section__title">Problema</h3>
+
+            <ul class="problems">
+              <li class="problems__item">
+                <div class="title-wrapper">
+                  <div class="title-wrapper--border">
+                    <p class="problems__item__title">Problema 1</p>
+                  </div>
+                </div>
+                <p class="problems__item__info">
+                  La povertà è un problema lobale che desideriamo risolvere
+                  definitivamente. Investendo
+                  <span class="problems__item__info--accent">€ 250</span>, ci
+                  aiuterai all'istante a salvare la vita delle persone
+                  guadagnando!
+                </p>
+              </li>
+
+              <li class="problems__item">
+                <div class="title-wrapper">
+                  <div class="title-wrapper--border">
+                    <p class="problems__item__title">Problema 2</p>
+                  </div>
+                </div>
+                <p class="problems__item__info">
+                  Le grandi aziende sono le sole a poter erogare stipendi
+                  consistenti. Tuttavia, grazie al quantum computing, questa
+                  realtà sta per cambiare. Da oggi, sarai TU stesso l'artefice
+                  di un grande introito, grazie al potere che un tempo era
+                  riservato alle persone più ricche e che adesso appartiene
+                  anche a te.
+                </p>
+              </li>
+
+              <li class="problems__item">
+                <div class="title-wrapper">
+                  <div class="title-wrapper--border">
+                    <p class="problems__item__title">Problema 3</p>
+                  </div>
+                </div>
+                <p class="problems__item__info">
+                  QuantumAI è stato progettato per rendere il mondo un posto
+                  migliore. Elon ha sviluppato un'idea vantaggiosa per tutti.
+                  Hai prestiti da restituire o un mutuo da pagare? Desideri
+                  aiutare le persone? Ora potrai fare entrambe le cose.
+                </p>
+              </li>
+
+              <li class="problems__item">
+                <div class="title-wrapper">
+                  <div class="title-wrapper--border">
+                    <p class="problems__item__title">Problema 4</p>
+                  </div>
+                </div>
+                <p class="problems__item__info">
+                  Gestire l'economia di un Paese è una missione molto delicata.
+                  Come dimostrato dagli avvenimenti del 2008, bastano poche
+                  persone al vertice per rovinarla. Noi vogliamo impedire che
+                  ciò accada di nuovo.
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- arrow-down button -->
+          <div class="button-container">
+            <div class="arrow-down-button">
+              <div class="arrow-down-button--border">
+                <svg class="arrow-down__icon" width="49" height="25">
+                  <use href="./images/sprite.svg#arrow-down"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- solutions -->
+      <section class="solutions-section">
+        <div class="container">
+          <h3 class="section__title">Soluzione</h3>
+          <p class="solutions__info">
+            Utilizzando la potenza del quantum computing ci aiuterai a
+            raggiungere i privilegi che attualmente sono destinati soltanto
+            all'1% delle persone, nonché a risolvere 4 grandi problematiche:
+            sviluppare un'economia stabile e ricca per tutti, eliminare la
+            povertà, offrire a tutti uno stile di vita dignitoso (così che non
+            siano soltanto i ricchi ad averlo) e aiutarti a realizzare i tuoi
+            sogni finanziari!
+          </p>
+        </div>
+      </section>
+
+      <!-- user actions -->
+      <section class="actions-section">
+        <div class="container">
+          <h3 class="section__title section__title--margin">
+            Ecco come iniziare:
+          </h3>
+          <ul class="steps">
+            <li class="steps__card">
+              <div class="steps__card__wrapper">
+                <div class="number-wrapper">
+                  <svg class="number__icon" width="70" height="100">
+                    <use href="./images/sprite.svg#number-backgr"></use>
+                  </svg>
+                  <span class="number">1</span>
+                </div>
+                <p class="steps__card__title">Deposita</p>
+                <p class="steps__card__info">Deposita€ 250</p>
+              </div>
+            </li>
+
+            <li class="steps__card">
+              <div class="steps__card__wrapper">
+                <p class="steps__card__title">Scegli</p>
+                <p class="steps__card__info">
+                  Scegli le operazioni raccomandate da QuantumAI (grazie alla
+                  potenza dell'informatica quantistica!)
+                </p>
+                <div class="number-wrapper">
+                  <span class="number">2</span>
+                  <svg class="number__icon" width="70" height="100">
+                    <use href="./images/sprite.svg#number-backgr"></use>
+                  </svg>
+                </div>
+              </div>
+            </li>
+
+            <li class="steps__card">
+              <div class="steps__card__wrapper">
+                <div class="number-wrapper">
+                  <svg class="number__icon" width="70" height="100">
+                    <use href="./images/sprite.svg#number-backgr"></use>
+                  </svg>
+                  <span class="number">3</span>
+                </div>
+                <p class="steps__card__title">Preleva</p>
+                <p class="steps__card__info">
+                  Preleva qualsiasi importo in poche ore!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/validation/jquery.validate.min.js"></script>
+    <script src="./js/validation/localization/messages_uk.min.js"></script>
+    <script src="./js/phoneMask/intlTelInput.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

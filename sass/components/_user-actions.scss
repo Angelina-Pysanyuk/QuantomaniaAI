@@ -1,0 +1,90 @@
+.actions-section {
+  padding-bottom: 70px;
+}
+
+.section__title--margin {
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  padding-left: 0;
+}
+
+.steps__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 150px;
+  background: var(--card-background);
+  box-shadow: 4px 4px 4px rgba(55, 55, 55, 0.25);
+
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:nth-child(odd) .number-wrapper {
+    position: absolute;
+    left: 24px;
+    top: 0;
+  }
+
+  &:nth-child(even) .number-wrapper {
+    position: absolute;
+    right: 24px;
+    top: 0;
+  }
+}
+
+.steps__card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.number {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  font-family: "Orchidea Pro";
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+  color: var(--accent-orange-color);
+
+  transform: translate(-50%, -50%);
+}
+
+.steps__card__title {
+  margin-bottom: 10px;
+
+  font-family: "Orchidea Pro";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--accent-orange-color);
+}
+
+.steps__card__info {
+  max-width: 400px;
+  color: var(--secondary-text-color);
+}
